@@ -10,18 +10,39 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
         crossorigin="anonymous"
         >
-        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
 </head>
 <body>
-    <header class="header py-4">
+    <header class="header py-4 d-flex flex-row justify-content-between">
         <h1 class="mx-5 header-title">
-            Clothes Store Outlet
+            Shop
         </h1>
 
-        <a class="btn btn-link">Quem somos?</a>
-        <a class="btn btn-link">Contato</a>
-        <a class="btn btn-link">Trabalhe conosco</a>
+        <div class="header-links d-none d-lg-block mx-5">
+            <a class="btn btn-link">Quem somos?</a>
+            <a class="btn btn-link">Contato</a>
+            <a class="btn btn-link">Trabalhe conosco</a>
+        </div>
+
+        <div class="header-links_menuButton d-block d-lg-none mx-5">
+            <button
+                type="button"
+                class="btn btn-outline-dark"
+                onclick="toggleMenuLinks()"
+            >
+                <!-- <i class="bi bi-list"></i> -->
+                <img src="src/images/list.svg" alt="Menu Icon">
+            </button>
+        </div>
     </header>
+
+    <nav class="nav flex-column card d-none d-lg-none">
+        <ul class="list-group nav-list">
+            <a href="#"><li class="list-group-item">Quem somos?</li></a>
+            <a href="#"><li class="list-group-item">Contato</li></a>
+            <a href="#"><li class="list-group-item">Trabalhe conosco</li></a>
+        </ul>
+    </nav>
 
     <button type="button" class="m-3 btn btn-outline-warning">Enviar</button>
 
@@ -40,6 +61,7 @@
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" 
         crossorigin="anonymous">
     </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
