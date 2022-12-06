@@ -13,15 +13,15 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
 </head>
 <body>
-    <header class="header py-4 d-flex flex-row justify-content-between">
+    <header class="header d-flex flex-row justify-content-between py-4">
         <h1 class="mx-5 header-title">
             Shop
         </h1>
 
         <div class="header-links d-none d-lg-block mx-5">
-            <a class="btn btn-link">Quem somos?</a>
-            <a class="btn btn-link">Contato</a>
-            <a class="btn btn-link">FAQ</a>
+            <a class="btn">Quem somos?</a>
+            <a class="btn">Contato</a>
+            <a class="btn">FAQ</a>
         </div>
 
         <div class="header-links_menuButton d-block d-lg-none mx-5">
@@ -29,9 +29,7 @@
                 type="button"
                 class="btn btn-outline-dark"
                 onclick="toggleMenuLinks()"
-            >
-                <!-- <i class="bi bi-list"></i> -->
-                <img src="src/images/list.svg" alt="Menu Icon">
+            ><img src="src/images/list.svg" alt="Menu Icon">
             </button>
         </div>
     </header>
@@ -44,9 +42,35 @@
         </ul>
     </nav>
 
-    <button type="button" class="m-3 btn btn-outline-warning">Enviar</button>
+    <section class="carousel-section mx-5">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/images/slide1.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/images/slide2.png" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/images/slide3png" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="products">
+            <span>
+                Camisas
+            </span>
+        </div>
 
-
+    </section>
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 

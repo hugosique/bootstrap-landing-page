@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    margin: 0 5rem;
+}
+
 /* header */
 .header-title {
     font-size: 1.8rem;
@@ -19,4 +23,19 @@
 .list-group a li:hover {
     background-color: #e2e2e2;
     transition: .3s;
+}
+.header-links {
+    height: 100%;
+}
+.header-links a {
+    height: 100%;
+}
+.header-links a:hover{
+    background-color: #f8f8f8;
+    transition: .3s;
+    border-radius: none;
+}
+.carousel img{
+    height: 350px;
+    /* object-fit: cover; */
 }
