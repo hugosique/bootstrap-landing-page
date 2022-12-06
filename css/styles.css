@@ -11,12 +11,25 @@ body {
     margin: 0 5rem;
 }
 
+@media(max-width: 530px) {
+    body {
+        margin: 0;
+    }
+}
+
 /* header */
-.header-title {
+.nav-title {
     font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 8px;
 }
 
 /* nav */
+.list-group li{
+    border: none;
+}
 .list-group a {
     text-decoration: none;
 }
@@ -24,13 +37,13 @@ body {
     background-color: #e2e2e2;
     transition: .3s;
 }
-.header-links {
+.nav-links {
     height: 100%;
 }
-.header-links a {
+.nav-links a {
     height: 100%;
 }
-.header-links a:hover{
+.nav-links a:hover{
     background-color: #f8f8f8;
     transition: .3s;
     border-radius: none;

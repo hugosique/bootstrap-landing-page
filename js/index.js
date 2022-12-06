@@ -1,5 +1,5 @@
 function toggleMenuLinks() {
-    const menuList = document.querySelector('.nav');
+    const menuList = document.querySelector('.nav-items-sm');
 
     if(menuList.classList.contains('d-none')) {
         menuList.classList.remove('d-none');
